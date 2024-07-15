@@ -30,8 +30,7 @@ window.addEventListener('load', () => {
 function fetchUserData(token) {
     fetch('https://api.spotify.com/v1/me', {
         headers: {
-            'Authorization': `Bearer ${token}`,
-            'Authorization-Secret': clientSecret
+            'Authorization': `Bearer ${token}`
         }
     })
     .then(response => response.json())
