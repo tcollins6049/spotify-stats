@@ -1,4 +1,5 @@
 const clientId = 'c788810678c0438eade887f9d17141a2';
+const clientSecret = '14e2eae10c9841a3a575a5e73e532c7f';
 const redirectUri = 'https://tcollins6049.github.io/spotify-stats/';
 
 const authEndpoint = 'https://accounts.spotify.com/authorize';
@@ -29,7 +30,8 @@ window.addEventListener('load', () => {
 function fetchUserData(token) {
     fetch('https://api.spotify.com/v1/me', {
         headers: {
-            'Authorization': `Bearer ${token}`
+            'Authorization': `Bearer ${token}`,
+            'Authorization-Secret': clientSecret
         }
     })
     .then(response => response.json())
