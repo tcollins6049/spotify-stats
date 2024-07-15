@@ -33,7 +33,13 @@ function fetchUserData(token) {
             'Authorization': `Bearer ${token}`
         }
     })
-    .then(response => response.json())
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Network response was not ok');
+        }
+    })
     .then(data => {
         document.getElementById('content').innerHTML = `
             <h2>Welcome, ${data.display_name}</h2>
