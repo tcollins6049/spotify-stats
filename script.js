@@ -1,5 +1,5 @@
-const clientId = 'your-client-id';
-const redirectUri = 'https://your-username.github.io/spotify-api-playground/';
+const clientId = 'c788810678c0438eade887f9d17141a2';
+const redirectUri = 'https://tcollins6049.github.io/spotify-stats/';
 
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const scopes = [
