@@ -1,6 +1,6 @@
 const clientId = 'c788810678c0438eade887f9d17141a2';
 const clientSecret = '14e2eae10c9841a3a575a5e73e532c7f';
-const redirectUri = 'https://tcollins6049.github.io/spotify-stats/';
+const redirectUri = 'https://tcollins6049.github.io/spotify-stats/logged/';
 
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const scopes = [
